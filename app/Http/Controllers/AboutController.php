@@ -8,7 +8,7 @@ class AboutController extends Controller
 {
 	public function about(){
 
-		return view('about', ['fName'=>'Amirhosein', 'lName'=>'Mahdiayr']);
+		return view('front.layout.master', ['fName'=>'Amirhosein', 'lName'=>'Mahdiayr']);
 	}
     
 }
