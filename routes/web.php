@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomePageController@index');
 
 Route::get('/{id}/{name?}', function ($id, $name="codepro") {
     return "Id : $id, Name : $name";
